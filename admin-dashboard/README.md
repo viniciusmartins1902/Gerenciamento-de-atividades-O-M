@@ -1,58 +1,58 @@
-# Dashboard Administrativo - PowerChina
+📊 Gerenciamento de Atividades O&M
 
-Dashboard web PHP para gerenciamento e visualização de inspeções sincronizadas do aplicativo mobile.
+Dashboard para consolidação de dados operacionais, geração de relatórios técnicos e análise de performance em atividades de Operação & Manutenção.
 
-## 📋 Funcionalidades
+🚀 Sobre o Projeto
 
-- ✅ Login com autenticação por sessão
-- 📊 Dashboard com estatísticas e gráficos
-- 📋 Lista de inspeções com filtros
-- 🔍 Visualização detalhada de cada inspeção
-- 📷 Galeria de fotos das inspeções
-- 📈 Relatórios por campo, técnico e período
-- 📥 Exportação para CSV/Excel
-- 🎨 Design moderno e responsivo
+O Gerenciamento de Atividades O&M é um sistema desenvolvido para centralizar informações enviadas pelo aplicativo dos técnicos de campo, transformando dados operacionais em:
 
-## 🚀 Instalação
+📈 Gráficos de desempenho
 
-### Opção 1: XAMPP Local
+📝 Relatórios técnicos estruturados
 
-1. Instale o XAMPP
-2. Copie a pasta `admin-dashboard` para `C:\xampp\htdocs\`
-3. Acesse: `http://localhost/admin-dashboard`
+📂 Documentação padronizada
 
-### Opção 2: InfinityFree
+📊 Indicadores de performance operacional
 
-1. Faça upload de todos os arquivos via FTP para a pasta `htdocs`
-2. Acesse: `https://seudominio.infinityfreeapp.com`
+O objetivo é melhorar a rastreabilidade, organização e análise estratégica das atividades de O&M.
 
-### Opção 3: PHP Built-in Server
+🏗️ Arquitetura do Sistema
+Técnicos de Campo (App)
+          ↓
+     Banco de Dados
+          ↓
+   Dashboard Web
+          ↓
+Relatórios | Gráficos | Indicadores
+🎯 Funcionalidades
 
-```bash
-cd c:\dev\admin-dashboard
-php -S localhost:8000
-```
+✅ Recebimento automático de dados do aplicativo de campo
 
-Acesse: `http://localhost:8000`
+✅ Consolidação de atividades por técnico, data e equipamento
 
-## 🔐 Credenciais de Acesso
+✅ Geração automática de relatórios operacionais
 
-**Administrador:**
-- Email: `admin@powerchina.com.br`
-- Senha: `Admin@2026`
+✅ Criação de gráficos de desempenho
 
-**Vinicius:**
-- Email: `vinicius.pimenta@powerchina.com.br`
-- Senha: `Mrt@2026`
+✅ Organização e padronização de documentação técnica
 
-## ⚙️ Configuração
+✅ Exportação de dados
 
-Edite o arquivo `config.php` para ajustar:
+🔄 Evolução contínua com novos indicadores
 
-- URL do Supabase
-- Chave de API do Supabase
-- Usuários administrativos
-- Fuso horário
+📊 Indicadores Monitorados
+
+Atividades executadas por período
+
+Tempo médio de atendimento
+
+Ocorrências por tipo
+
+Performance por técnico
+
+Status de pendências
+
+Histórico de intervenções
 
 ## 📊 Estrutura
 
@@ -97,4 +97,4 @@ admin-dashboard/
 
 ---
 
-Desenvolvido para PowerChina - Sistema de Inspeções
+Desenvolvido por Vinicius Martins
