@@ -1,0 +1,236 @@
+/* Melhorias de Contraste - WCAG AAA Compliance */
+/* Sobrescreve estilos do admin.css para melhor acessibilidade */
+
+:root {
+    --primary-color: #0d6efd;
+    --primary-dark: #0a58ca;
+    --text-dark: #212529;
+    --text-light: #ffffff;
+    --text-muted: #6c757d;
+}
+
+/* Textos em cards brancos - Alto contraste */
+.card:not([class*="bg-"]),
+.card:not([class*="bg-"]) .card-body,
+.table-responsive {
+    color: var(--text-dark) !important;
+}
+
+.card:not([class*="bg-"]) *:not(.badge):not(.btn):not(.btn *):not(.alert):not(.card-header):not(.card-header *):not(.table thead *) {
+    color: var(--text-dark) !important;
+}
+
+/* Títulos principais sobre fundo escuro */
+main > div h1,
+main > div h2,
+main .border-bottom h1,
+main .border-bottom h2 {
+    color: var(--text-light) !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+/* Navbar azul - Texto branco */
+.navbar {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%) !important;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.navbar *:not(.btn) {
+    color: var(--text-light) !important;
+}
+
+.navbar-brand,
+.navbar-text {
+    color: var(--text-light) !important;
+    text-decoration: none !important;
+}
+
+.navbar-brand:hover {
+    color: var(--text-light) !important;
+    opacity: 0.9;
+}
+
+/* Sidebar com fundo escuro sólido */
+.sidebar {
+    background: linear-gradient(180deg, #1a1a2e 0%, #16213e 50%, #0f1624 100%) !important;
+    box-shadow: 2px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.sidebar * {
+    color: var(--text-light) !important;
+}
+
+.sidebar .nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+    transition: all 0.3s ease;
+    text-decoration: none !important;
+}
+
+.sidebar .nav-link:hover {
+    background-color: rgba(13, 110, 253, 0.2) !important;
+    color: var(--text-light) !important;
+    text-decoration: none !important;
+}
+
+.sidebar .nav-link.active {
+    background: var(--primary-color) !important;
+    color: var(--text-light) !important;
+    box-shadow: 0 4px 12px rgba(13, 110, 253, 0.4);
+    text-decoration: none !important;
+}
+
+/* Card headers - Texto branco e negrito */
+.card-header,
+.card-header * {
+    background: var(--primary-color) !important;
+    color: var(--text-light) !important;
+    font-weight: 700 !important;
+}
+
+.card-header h1,
+.card-header h2,
+.card-header h3,
+.card-header h4,
+.card-header h5,
+.card-header h6 {
+    color: var(--text-light) !important;
+    font-weight: 700 !important;
+    margin: 0;
+}
+
+/* Tabelas */
+.table thead th {
+    background: var(--primary-color) !important;
+    color: var(--text-light) !important;
+}
+
+.table tbody td,
+.table tbody th {
+    color: var(--text-dark) !important;
+}
+
+/* Cards coloridos mantêm texto branco */
+.bg-primary,
+.bg-primary *:not(.btn-close),
+.bg-success,
+.bg-success *:not(.btn-close),
+.bg-info,
+.bg-info *:not(.btn-close),
+.bg-danger,
+.bg-danger *:not(.btn-close) {
+    color: var(--text-light) !important;
+}
+
+/* Warning com texto escuro para melhor contraste (amarelo + preto = melhor legibilidade) */
+.bg-warning,
+.bg-warning *:not(.btn-close) {
+    color: var(--text-dark) !important;
+}
+
+/* Botões primários */
+.btn-primary {
+    background: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+    color: var(--text-light) !important;
+}
+
+.btn-primary:hover {
+    background: var(--primary-dark) !important;
+    border-color: var(--primary-dark) !important;
+    color: var(--text-light) !important;
+}
+
+/* Labels e formulários */
+label,
+.form-label {
+    color: var(--text-dark) !important;
+    font-weight: 600;
+}
+
+.form-control {
+    color: var(--text-dark) !important;
+    border: 2px solid #ced4da;
+}
+
+.form-control::placeholder {
+    color: var(--text-muted) !important;
+    opacity: 0.8;
+}
+
+.form-control:focus {
+    color: var(--text-dark) !important;
+    border-color: var(--primary-color);
+}
+
+/* Text-muted com melhor contraste */
+.text-muted {
+    color: var(--text-muted) !important;
+}
+
+/* Badges mantêm suas cores originais */
+.badge {
+    font-weight: 600;
+}
+
+/* Alertas */
+.alert-success {
+    background-color: #d1e7dd;
+    border-color: #badbcc;
+    color: #0a3622 !important;
+}
+
+.alert-success * {
+    color: #0a3622 !important;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border-color: #f5c2c7;
+    color: #58151c !important;
+}
+
+.alert-danger * {
+    color: #58151c !important;
+}
+
+.alert-warning {
+    background-color: #fff3cd;
+    border-color: #ffecb5;
+    color: #664d03 !important;
+}
+
+.alert-warning * {
+    color: #664d03 !important;
+}
+
+.alert-info {
+    background-color: #cff4fc;
+    border-color: #b6effb;
+    color: #055160 !important;
+}
+
+.alert-info * {
+    color: #055160 !important;
+}
+
+/* Small text com contraste adequado */
+small {
+    color: inherit !important;
+    opacity: 0.8;
+}
+
+/* Links com melhor contraste - SEM sublinhado */
+a:not(.btn):not(.nav-link):not(.navbar-brand) {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:not(.btn):not(.nav-link):not(.navbar-brand):hover {
+    color: var(--primary-dark);
+    text-decoration: underline;
+}
+
+/* Garantir legibilidade em todos os contextos */
+p, span, div {
+    color: inherit;
+}
